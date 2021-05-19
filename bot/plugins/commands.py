@@ -44,10 +44,10 @@ async def start(bot, update):
         
         caption = file_caption if file_caption != ("" or None) else ("<code>" + file_name + """</code>\n━━━━━━━━━━━━━━━━━━━━
 💡 ɢʀᴏᴜᴘ
-@Film_zone_group
+@Filimdom
   
 💡 ᴄʜᴀɴɴᴇʟ
-@Series_xzone""")
+@FILMDOMPICTURES""")
         
         if file_type == "document":
         
@@ -62,11 +62,11 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'SHARE', url="https://t.me/share/url?url=https://t.me/film_zone_group"
+                                    'SHARE', url="https://t.me/share/url?url=https://t.me/filmdom"
                                 ),
                                 InlineKeyboardButton
                                 (   
-                                    'CHANNEL', url="https://t.me/series_xzone"
+                                    'CHANNEL', url="https://t.me/FILMDOMPICTURES"
                                 )      
                                  
                         ]
@@ -86,11 +86,11 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'SHARE', url="https://t.me/share/url?url=https://t.me/film_zone_group"
+                                    'SHARE', url="https://t.me/share/url?url=https://t.me/filmdom"
                                 ),
                                 InlineKeyboardButton
                                 (   
-                                    'CHANNEL', url="https://t.me/series_xzone"
+                                    'CHANNEL', url="https://t.me/FILMDOMPICTURES"
                                 )      
                         ]
                     ]
@@ -126,8 +126,8 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('GROUP', url=''),
-        InlineKeyboardButton('CHANNEL', url='')
+        InlineKeyboardButton('GROUP', url='https://t.me/FILMDOM'),
+        InlineKeyboardButton('CHANNEL', url='https://t.me/FILMDOMPICTURES')
     ],[
         InlineKeyboardButton('💡HELP', callback_data="help"),
         InlineKeyboardButton('🔐ClOSE', callback_data="close")
