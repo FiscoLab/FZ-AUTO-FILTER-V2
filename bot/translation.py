@@ -8,7 +8,7 @@ class Translation(object):
     START_TEXT = """<b>Hey {}</b>
 ɪ ᴀᴍ ᴀ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ ʙᴏᴛ sɪᴍᴘʟʏ sᴇᴀʀᴄʜ ғᴏʀ ᴛʜᴇ ғɪʟᴇs ᴍᴀᴅᴇ ғᴏʀ <b><a href="https://t.me/Filimdom">Film Dom</a></b>
 
-🕵‍♂ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ 👉 <b><a href="https://t.me/Mr_Kollam67">THIS PERSON</a></b>
+🕵‍♂ ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ 👉 <b><a href="https://t.me/Mr_Kollam67">Levinomad</a></b>
 """    
     
     HELP_TEXT = """
