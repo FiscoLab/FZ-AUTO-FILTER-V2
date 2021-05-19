@@ -142,7 +142,7 @@ async def cb_navg(bot, update: CallbackQuery):
     
     reply_markup = InlineKeyboardMarkup(temp_results)
     
-    text=f"<b>👇 ʜᴇʀᴇ ɪꜱ ᴛʜᴇ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀ yᴏᴜʀ qᴜᴇʀy {query}👇\nᴄʜᴏᴏꜱᴇ ᴀɴʏ ʙᴜᴛᴛᴏɴ\n\nꜱʜᴀʀᴇ ᴀɴᴅ ꜱᴜᴘᴘᴏʀᴛ\n<b><a href='https://t.me/Film_zone_channels'>©ꜰɪʟᴍ ᴢᴏɴᴇ</a></b>"
+    text=f"<b>👇 ʜᴇʀᴇ ɪꜱ ᴛʜᴇ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀ yᴏᴜʀ qᴜᴇʀy {query}👇\n\nꜱʜᴀʀᴇ ᴀɴᴅ ꜱᴜᴘᴘᴏʀᴛ"
         
     try:
         await update.message.edit(
@@ -1639,8 +1639,8 @@ async def callback_data(bot, update: CallbackQuery):
 
     if query_data == "start":
         buttons = [[
-            InlineKeyboardButton('⚠️JOIN', url='https://t.me/film_zone_fz'),
-            InlineKeyboardButton('🕵‍♂CREATOR', url='https://t.me/diago_x')
+            InlineKeyboardButton('GROUP', url=''),
+            InlineKeyboardButton('CHANNEL', url='')
         ],[
             InlineKeyboardButton('💡HELP', callback_data="help"),
             InlineKeyboardButton('🔐ClOSE', callback_data="close")
