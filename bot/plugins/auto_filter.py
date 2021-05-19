@@ -213,7 +213,7 @@ async def auto_filter(bot, update):
         try:
             await bot.send_photo(
                 chat_id = update.chat.id,
-                photo="",
+                photo="https://telegra.ph/Filmdom-05-19",
                 caption=f"<b>👇 ʜᴇʀᴇ ɪꜱ ᴛʜᴇ ʀᴇꜱᴜʟᴛꜱ ꜰᴏʀ yᴏᴜʀ qᴜᴇʀy {query}👇\n\nꜱʜᴀʀᴇ ᴀɴᴅ ꜱᴜᴘᴘᴏʀᴛ</b>",
                 reply_markup=reply_markup,
                 parse_mode="html",
