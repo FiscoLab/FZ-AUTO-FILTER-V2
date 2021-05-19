@@ -12,7 +12,7 @@ db = Database()
 
 @Client.on_message(filters.command(["start"]) & filters.private, group=1)
 async def start(bot, update):
-    update_channel = "@Film_zone_fz"
+    update_channel = "@Film_zone_group"
     if update_channel:
         try:
             user = await bot.get_chat_member(update_channel, update.chat.id)
@@ -24,7 +24,7 @@ async def start(bot, update):
             await update.reply_text(
                 text="𝐘𝐨𝐮 𝐦𝐮𝐬𝐭 𝐣𝐨𝐢𝐧 𝐨𝐮𝐫 𝐜𝐡𝐚𝐧𝐧𝐞𝐥 𝐨𝐭𝐡𝐞𝐫𝐰𝐢𝐬𝐞 𝐓𝐡𝐢𝐬 𝐛𝐨𝐚𝐭 𝐢𝐬 𝐮𝐧𝐮𝐬𝐚𝐛𝐥𝐞\n<b>ꜱʜᴀʀᴇ ᴀɴᴅ ꜱᴜᴘᴘᴏʀᴛ\n\n<a href='https://t.me/Film_zone_channels'>©ꜰɪʟᴍ ᴢᴏɴᴇ</a></b>",
                 reply_markup=InlineKeyboardMarkup([
-                    [ InlineKeyboardButton(text=" 🔰JOIN OUR CHANNEL🔰 ", url=f"https://t.me/film_zone_fz")]
+                    [ InlineKeyboardButton(text=" 🔰JOIN OUR CHANNEL🔰 ", url=f"https://t.me/film_zone_group")]
               ])
             )
             return
@@ -43,14 +43,11 @@ async def start(bot, update):
             return
         
         caption = file_caption if file_caption != ("" or None) else ("<code>" + file_name + """</code>\n━━━━━━━━━━━━━━━━━━━━
-<b>💡 ɢʀᴏᴜᴘ
+💡 ɢʀᴏᴜᴘ
 @Film_zone_group
   
-💡 ɢʀᴏᴜᴘ
-@Series_xzone
-
-🎯  ᴄʜᴀɴɴᴇʟs
-@Film_zone_channels</b>""")
+💡 ᴄʜᴀɴɴᴇʟ
+@Series_xzone""")
         
         if file_type == "document":
         
@@ -69,7 +66,7 @@ async def start(bot, update):
                                 ),
                                 InlineKeyboardButton
                                 (   
-                                    '🔰SERIES GROUP', url="https://t.me/series_xzone"
+                                    'CHANNEL', url="https://t.me/series_xzone"
                                 )      
                                  
                         ]
@@ -93,7 +90,7 @@ async def start(bot, update):
                                 ),
                                 InlineKeyboardButton
                                 (   
-                                    '🔰SERIES GROUP', url="https://t.me/series_xzone"
+                                    'CHANNEL', url="https://t.me/series_xzone"
                                 )      
                         ]
                     ]
@@ -129,8 +126,8 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('⚠️JOIN', url='https://t.me/film_zone_fz'),
-        InlineKeyboardButton('🕵‍♂CREATOR', url='https://t.me/diago_x')
+        InlineKeyboardButton('GROUP', url=''),
+        InlineKeyboardButton('CHANNEL', url='')
     ],[
         InlineKeyboardButton('💡HELP', callback_data="help"),
         InlineKeyboardButton('🔐ClOSE', callback_data="close")
