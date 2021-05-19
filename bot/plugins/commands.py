@@ -62,7 +62,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'SHARE', url="https://t.me/share/url?url=https://t.me/filmdom"
+                                    'SHARE', url="https://t.me/share/url?url=https://t.me/filimdom"
                                 ),
                                 InlineKeyboardButton
                                 (   
@@ -86,7 +86,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'SHARE', url="https://t.me/share/url?url=https://t.me/filmdom"
+                                    'SHARE', url="https://t.me/share/url?url=https://t.me/filimdom"
                                 ),
                                 InlineKeyboardButton
                                 (   
@@ -126,7 +126,7 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('GROUP', url='https://t.me/FILMDOM'),
+        InlineKeyboardButton('GROUP', url='https://t.me/FILIMDOM'),
         InlineKeyboardButton('CHANNEL', url='https://t.me/FILMDOMPICTURES')
     ],[
         InlineKeyboardButton('💡HELP', callback_data="help"),
